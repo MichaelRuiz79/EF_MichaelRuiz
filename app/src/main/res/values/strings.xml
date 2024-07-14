@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EF_MichaelRuiz</string>
+    <string name="Item_Inicio">Inicio</string>
+    <string name="Item_Listado_Player">Listado</string>
+    <string name="Item_Cuenta">Cuenta</string>
+    <string name="Titulo_RL">Titulo</string>
+    <string name="Ingresar_Email">Ingresar con Email</string>
+    <string name="Ingresar_Google">Ingresar con Google</string>
+</resources>
