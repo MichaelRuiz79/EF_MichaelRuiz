@@ -1,52 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/ToolbarRL"
-        android:layout_width="match_parent"
-        android:layout_height="55dp">
-        <TextView
-            android:id="@+id/TituloRL"
-            android:text="@string/Titulo_RL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#ccc"
-            android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE JUGADOR"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
 
-    </RelativeLayout>
-    <FrameLayout
-        android:id="@+id/Fragment1"
-        android:layout_below="@id/ToolbarRL"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/View1"
-        />
-    <View
-        android:id="@+id/View1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ccc"
-        android:layout_above="@+id/BottonNV"
-        />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BottonNV"
+    <EditText
+        android:id="@+id/editTextTeamName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/mi_menu"
-        app:labelVisibilityMode="labeled"
-        />
+        android:hint="Nombre del equipo"
+        android:layout_marginBottom="16dp" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/editTextTeamLogoUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL del escudo del equipo"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonRegisterMatches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Enfrentamientos"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonMatchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listado de Enfrentamientos"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

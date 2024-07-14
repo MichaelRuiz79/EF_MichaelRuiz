@@ -13,6 +13,7 @@ googleServiceVersion = "4.4.2"
 firebaseAuthversion = "23.0.0"
 firebaseDatabase="21.0.0"
 firebaseStorageV = "21.0.0"
+firebaseFirestoreKtx = "25.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +27,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 firebaseAuth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuthversion" }
 firebaseDatabase={group="com.google.firebase", name= "firebase-database", version.ref="firebaseDatabase"}
 firebaseStorage={group = "com.google.firebase", name="firebase-storage", version.ref="firebaseStorageV"}
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
